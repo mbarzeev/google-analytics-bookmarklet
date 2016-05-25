@@ -96,6 +96,8 @@
 				console.log(`trying to update nodes, iteration ${i}`);
 				if (updateNodes() ==! ALREADY_UPDATED) {
 					setTimeout(update, 1000);
+				} else {
+					i = 0;
 				}
 			} else {
 				i = 0;
