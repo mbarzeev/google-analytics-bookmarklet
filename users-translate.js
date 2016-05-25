@@ -1,6 +1,6 @@
 (function() {
 	const CLASS_ID = 'capriza-injected-id';
-	const ALREADY_UPDATED = true;
+	const ALREADY_UPDATED = 'Already Updated';
 	let alertThrottle = false;
 
 	function myAlert(message) {
