@@ -1,5 +1,6 @@
 (function() {
 	const CLASS_ID = 'capriza-injected-id';
+	const ALREADY_UPDATED = true;
 	let alertThrottle = false;
 
 	function myAlert(message) {
@@ -43,7 +44,7 @@
 	function updateNodes(){
 		if ($(`\.${CLASS_ID}`).length > 0){
 			console.log('Page already updated');
-			return;
+			return ALREADY_UPDATED;
 		}
 		let users = $('.TARGET-app-visitors-user-activity');
 		let user = $('#ID-activity-userActivityProfile').find('> div:first-child > div:last-child');
@@ -93,8 +94,9 @@
 		function update(){
 			if (++i < 10) {
 				console.log(`trying to update nodes, iteration ${i}`);
-				updateNodes();
-				setTimeout(update, 1000);
+				if (updateNodes() ==! ALREADY_UPDATED) {
+					setTimeout(update, 1000);
+				}
 			} else {
 				i = 0;
 			}
