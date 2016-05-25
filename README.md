@@ -14,4 +14,8 @@ happens in the browser, so no customer personal data is exposed.
 1. Open [Google Analytics](https://analytics.google.com/analytics/web/).
 1. Click the bookmark.
 1. The script continuously monitors the page, replacing user ids with email addresses.
- 
+
+### Troubleshoot
+1. Make sure you are logged in to [Capriza Manage](https://manage.prod.capriza.com)!
+1. QA environment is not supported, the script fetches user ids from Dev environment for the development 
+account and from production for the production account.   
