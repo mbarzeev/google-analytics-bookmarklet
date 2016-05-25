@@ -6,7 +6,7 @@ This script runs in your browser, identifying user ids and replaces it with emai
 happens in the browser, so no customer personal data is exposed.
 
 ### Installation
-1. Open the [installation page]()
+1. Open the [installation page](http://capriza.github.io/google-analytics-bookmarklet/index.html)
 1. Drag the link to your browser's bookmarks bar.
 
 ### Usage
