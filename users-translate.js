@@ -12,7 +12,7 @@
 		alert(message);
 	}
 
-	let isDev = /Dev/.test($(".ID-accounts-summary-1")[0].textContent);
+	let isDev = /Dev/.test($(".gms-breadcrumb-button-text-secondary")[0].textContent);
 	let manageUrl = isDev ? 'https://managedev.capriza.com/users/' : 'https://manage.prod.capriza.com/users/';
 
 	if ($(`\.${CLASS_ID}`).length > 0){
